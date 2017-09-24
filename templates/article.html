@@ -1,0 +1,21 @@
+{{> header }}
+
+        <div class="col-sm-12 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">{{ title }}</h2>
+            <p class="blog-post-meta">{{ display-date date }}</p>
+
+            {{{ contents }}}
+
+            {{#if tags}}
+              <p class="blog-post-tags">
+                Tags:
+                {{#each tags}}{{#if @index}}, {{/if}}<a href="/tags/{{this.slug}}">{{this.name}}</a>{{/each}}
+              </p>
+            {{/if}}
+          </div>
+
+        </div><!-- /.blog-main -->
+
+{{> footer }}

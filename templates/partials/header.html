@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{site.description}}">
+    <meta name="author" content="David Wilson">
+
+    <title>{{title}} - {{site.title}}</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56540105-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-56540105-1');
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/63ae84264b.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/site.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bitter|Crete+Round|Faustina|Glegoo|Manuale|Roboto+Slab|Source+Serif+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=recentCabin|PT+Sans|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Expose RSS feed -->
+    {{#if rssUri}}
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for daviwil.com" href="/{{rssUri}}" />
+    {{/if}}
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-4">
+            <div class="blog-title">{{site.title}}</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="blog-description">{{site.description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav">
+          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link" href="/articles/">Articles</a>
+          <a class="nav-link" href="/videos/">Videos</a>
+          <!-- <a class="nav-link" href="/music/">Music</a> -->
+          <a class="nav-link" href="https://twitter.com/daviwil" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+          <a class="nav-link" href="https://github.com/daviwil" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+          <a class="nav-link" href="https://soundcloud.com/daviwil" target="_blank"><i class="fa fa-soundcloud fa-lg"></i></a>
+          <a class="nav-link" href="https://youtube.com/c/the_dev_aspect" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">

@@ -1,0 +1,27 @@
+{{> header }}
+
+        <div class="col-sm-12 blog-main">
+
+          <div class="blog-post">
+
+            <h1>{{title}}</h1>
+
+            {{#each pagination.files}}
+            <h2><a href="/{{path}}/">{{title}}</a>{{#if draft}} - <b>Draft</b>{{/if}}</h2>
+            <h4><i>{{display-date date}}</i></h4>
+            {{{excerpt}}}
+            {{/each}}
+
+            {{#if pagination.previous}}
+            <p><a href="{{pagination.previous.path}}">Older</a></p>
+            {{/if}}
+
+            {{#if pagination.next}}
+            <p><a href="{{pagination.next.path}}">Newer</a></p>
+            {{/if}}
+
+          </div>
+
+        </div><!-- /.blog-main -->
+
+{{> footer }}
