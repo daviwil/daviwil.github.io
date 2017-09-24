@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preview": "node build.js preview",
-    "publish": "node build.js"
+    "publish": "node build.js publish"
   },
   "repository": {
     "type": "git",
