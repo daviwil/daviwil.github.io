@@ -126,7 +126,9 @@ function build(callback) {
         highlight: highlighter()
     }))
     .use(excerpts())
-    .use(permalinks())
+    .use(permalinks({
+      relative: false
+    }))
     .use(tags({
         handle: 'tags',
         layout: 'listing.html',
@@ -139,6 +141,7 @@ function build(callback) {
         engine: 'handlebars',
         directory: 'templates',
         partials: 'templates/partials',
+        pattern: '**/*.html',
         default: 'article.html'
     }))
     .use(feed(
