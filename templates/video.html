@@ -1,0 +1,27 @@
+{{> header }}
+
+        <div class="col-sm-12 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">{{ title }}</h2>
+            <p class="blog-post-meta">{{ display-date date }}</p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{youtube}}?rel=0" allowfullscreen></iframe>
+            </div>
+
+            <h3><i>Join the discussion by commenting on the <a href="https://www.youtube.com/watch?v={{youtube}}">YouTube page</a> for this video!</i></h3>
+
+            {{{ contents }}}
+
+            {{#if tags}}
+              <p class="blog-post-tags">
+                Tags:
+                {{#each tags}}{{#if @index}}, {{/if}}<a href="/tags/{{this.slug}}">{{this.name}}</a>{{/each}}
+              </p>
+            {{/if}}
+          </div>
+
+        </div><!-- /.blog-main -->
+
+{{> footer }}

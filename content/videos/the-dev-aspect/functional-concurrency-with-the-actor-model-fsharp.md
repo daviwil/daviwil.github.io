@@ -2,13 +2,9 @@
 title: "Functional Concurrency with the Actor Model - F# Part 4"
 date: 2016-08-31
 tags: functional-programming, programming-languages, fsharp
+layout: video.html
+youtube: AMjcjXIMzmA
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/AMjcjXIMzmA?rel=0" allowfullscreen></iframe>
-</div>
-
-### *Join the discussion by commenting on the [YouTube page](https://www.youtube.com/watch?v=AMjcjXIMzmA) for this video!*
 
 In this episode we learn about the Actor Model and use F#'s MailboxProcessor to create a game loop for our text-based adventure game.  We'll also briefly cover a few more F# features like recursive functions, computation expressions, classes and exception handling.
 

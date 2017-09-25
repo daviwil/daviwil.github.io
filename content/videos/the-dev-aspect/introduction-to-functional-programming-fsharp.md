@@ -2,13 +2,9 @@
 title: "Introduction to Functional Programming with F#"
 date: 2016-08-12
 tags: functional-programming, programming-languages, fsharp
+layout: video.html
+youtube: Teak30_pXHk
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Teak30_pXHk?rel=0" allowfullscreen></iframe>
-</div>
-
-### *Join the discussion by commenting on the [YouTube page](https://www.youtube.com/watch?v=Teak30_pXHk) for this video!*
 
 In this episode I introduce the F# programming language and guide you through some basic functional programming concepts while showing F# language features.
 

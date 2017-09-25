@@ -2,13 +2,9 @@
 title: "Functional Game Logic with State Pipelines - F# Part 3"
 date: 2016-08-25
 tags: functional-programming, programming-languages, fsharp
+layout: video.html
+youtube: PFWYwr7Hhhg
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/PFWYwr7Hhhg?rel=0" allowfullscreen></iframe>
-</div>
-
-### *Join the discussion by commenting on the [YouTube page](https://www.youtube.com/watch?v=PFWYwr7Hhhg) for this video!*
 
 In this episode we start building the basic logic for our text adventure game by constructing a logic pipeline that transforms the game world state.  We cover match expressions, parameter destructuring, and a technique known as Railway-Oriented Programming.
 

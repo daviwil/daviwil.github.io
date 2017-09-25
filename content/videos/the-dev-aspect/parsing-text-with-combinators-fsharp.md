@@ -2,13 +2,9 @@
 title: "Parsing Text with Combinators - F# Part 5"
 date: 2016-09-22
 tags: functional-programming, programming-languages, fsharp
+layout: video.html
+youtube: ARJB8eDyxrg
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ARJB8eDyxrg?rel=0" allowfullscreen></iframe>
-</div>
-
-### *Join the discussion by commenting on the [YouTube page](https://www.youtube.com/watch?v=ARJB8eDyxrg) for this video!*
 
 In this episode we start building a set of parser combinators which can parse the adventure game's text commands in a functional way.  We'll also cover topics like recursive descent parsers, left-associativity, and F#'s range operator.
 
