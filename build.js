@@ -25,7 +25,7 @@ Handlebars.registerHelper("display-date", formatDate);
 
 Handlebars.registerHelper("recent", function(items, options) {
 
-  var limit = 5;
+  var limit = 3;
   var output = "";
   var itemsFound = 0;
 
