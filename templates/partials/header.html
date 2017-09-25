@@ -6,6 +6,12 @@
     <meta name="description" content="{{site.description}}">
     <meta name="author" content="David Wilson">
 
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@daviwil" />
+    <meta name="twitter:title" content="{{#if card.title}}{{card.title}}{{else}}{{title}}{{/if}}" />
+    <meta name="twitter:description" content="{{#if card.description}}{{card.description}}{{else}}{{excerpt}}{{/if}}" />
+    <meta name="twitter:image" content="{{#if card.image}}{{card.description}}{{else}}{{site.url}}/images/daviwil.jpg{{/if}}" />
+
     <title>{{title}} - {{site.title}}</title>
 
     <!-- Google Analytics -->
