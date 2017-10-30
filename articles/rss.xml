@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[daviwil.com]]></title><description><![CDATA[Technology, Creativity, and Life]]></description><link>https://daviwil.com</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 30 Oct 2017 18:33:34 GMT</lastBuildDate><atom:link href="https://daviwil.com/articles/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[David Wilson]]></author><item><title><![CDATA[The Journey Continues]]></title><description><![CDATA[<p>Friday was my last day at Microsoft.  I was lucky to be hired there straight out
+of grad school and even luckier to continue working there for just short of 10 years.
+I&#39;ve had the privilege of working with kind, talented people on projects to which
+I&#39;m proud to have contributed.</p>]]></description><link>https://daviwil.com/articles/the-journey-continues</link><guid isPermaLink="true">https://daviwil.com/articles/the-journey-continues</guid><dc:creator><![CDATA[David Wilson]]></dc:creator><pubDate>Mon, 30 Oct 2017 07:00:00 GMT</pubDate></item><item><title><![CDATA[Installing NixOS: Experiences in declarative Linux configuration]]></title><description><![CDATA[<p>
+I recently learned of a Linux distribution called <a href="http://nixos.org/">NixOS</a>.  Its website
+describes it as a &quot;purely functional&quot; Linux distribution.  Since I&#39;m a
+fan of functional programming, the concept of a functional Linux
+distribution intrigued me.  Even though I was fairly happy with my
+<a href="http://archlinux.org/">Arch Linux</a> install, I decided to give NixOS a shot to see if it lived
+up to its promise.  The bottom line is that NixOS and the Nix package
+manager are fantastic but a few issues made me switch back to Arch
+temporarily until I can get them sorted out.
+</p>]]></description><link>https://daviwil.com/articles/installing-nixos</link><guid isPermaLink="true">https://daviwil.com/articles/installing-nixos</guid><dc:creator><![CDATA[David Wilson]]></dc:creator><pubDate>Fri, 07 Nov 2014 08:00:00 GMT</pubDate></item></channel></rss>

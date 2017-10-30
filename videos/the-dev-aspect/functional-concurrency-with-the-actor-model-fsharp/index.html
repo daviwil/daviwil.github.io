@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Technology, Creativity, and Life">
+    <meta name="author" content="David Wilson">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@daviwil" />
+    <meta name="twitter:title" content="Functional Concurrency with the Actor Model - F# Part 4" />
+    <meta name="twitter:description" content="&lt;p&gt;In this episode we learn about the Actor Model and use F#&amp;#39;s MailboxProcessor to create a game loop for our text-based adventure game.  We&amp;#39;ll also briefly cover a few more F# features like recursive functions, computation expressions, classes and exception handling.&lt;/p&gt;" />
+    <meta name="twitter:image" content="https://daviwil.com/images/daviwil.jpg" />
+
+    <title>Functional Concurrency with the Actor Model - F# Part 4 - daviwil.com</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56540105-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-56540105-1');
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/63ae84264b.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/site.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bitter|Crete+Round|Faustina|Glegoo|Manuale|Roboto+Slab|Source+Serif+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=recentCabin|PT+Sans|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Expose RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for daviwil.com" href="/videos/the-dev-aspect/rss.xml" />
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-12 col-md-6">
+            <div class="blog-title">daviwil.com</div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="blog-description text-sm-left text-md-right text-lg-right text-xl-right">Technology, Creativity, and Life</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav">
+          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link" href="/articles/">Articles</a>
+          <a class="nav-link" href="/videos/">Videos</a>
+          <!-- <a class="nav-link" href="/music/">Music</a> -->
+          <a class="nav-link" href="https://twitter.com/daviwil" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+          <a class="nav-link" href="https://github.com/daviwil" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+          <a class="nav-link" href="https://soundcloud.com/daviwil" target="_blank"><i class="fa fa-soundcloud fa-lg"></i></a>
+          <a class="nav-link" href="https://youtube.com/c/the_dev_aspect" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Functional Concurrency with the Actor Model - F# Part 4</h2>
+            <p class="blog-post-meta">August 31, 2016</p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/AMjcjXIMzmA?rel=0" allowfullscreen></iframe>
+            </div>
+
+            <h3><i>Join the discussion by commenting on the <a href="https://www.youtube.com/watch?v=AMjcjXIMzmA">YouTube page</a> for this video!</i></h3>
+
+            <p>In this episode we learn about the Actor Model and use F#&#39;s MailboxProcessor to create a game loop for our text-based adventure game.  We&#39;ll also briefly cover a few more F# features like recursive functions, computation expressions, classes and exception handling.</p>
+<p>You can download the code for this episode at <a href="https://github.com/thedevaspect/aspect-fsharp">https://github.com/thedevaspect/aspect-fsharp</a></p>
+<p>Sections:</p>
+<ul>
+<li>Introducing the Actor Model [00:33]</li>
+<li>Introducing the MailboxProcessor [1:28]</li>
+<li>Creating a MailboxProcessor [3:35]</li>
+<li>Recursive Functions [4:19]</li>
+<li>Computation Expressions [4:52]</li>
+<li>Defining a Message Type [5:51]</li>
+<li>Updating the World State [7:13]</li>
+<li>Sending a Message [10:57]</li>
+<li>Defining a GameEngine class [14:00]</li>
+<li>Concurrent MailboxProcessors [16:31]</li>
+<li>Catching Exceptions [17:38]</li>
+<li>Making the Player Walk [18:09]</li>
+<li>Resetting the World State [23:31]</li>
+</ul>
+<p>Links:</p>
+<ul>
+<li>Actor model on Wikipedia: <a href="https://en.wikipedia.org/wiki/Actor_model">https://en.wikipedia.org/wiki/Actor_model</a></li>
+<li>Akka.net: <a href="http://getakka.net/">http://getakka.net/</a></li>
+<li>Microsoft Orleans: <a href="https://dotnet.github.io/orleans/">https://dotnet.github.io/orleans/</a></li>
+</ul>
+
+
+              <p class="blog-post-tags">
+                Tags:
+                <a href="/tags/functional-programming">functional-programming</a>, <a href="/tags/programming-languages">programming-languages</a>, <a href="/tags/fsharp">fsharp</a>
+              </p>
+          </div>
+
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row-->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <p>&copy; 2017 David Wilson</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-sm-left text-md-right text-lg-right text-xl-right">
+            Generated with <a href="http://www.metalsmith.io">Metalsmith</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
